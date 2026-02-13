@@ -101,7 +101,7 @@ function App() {
 
               {/* 중앙/하단 경로 표시: 모바일에서는 버튼 아래에, PC에서는 중앙에 위치 */}
               <div className="mt-2 sm:mt-0 sm:absolute sm:left-1/2 sm:-translate-x-1/2 text-[9px] sm:text-xs text-gray-400 font-mono tracking-tight sm:tracking-wider overflow-x-auto whitespace-nowrap scrollbar-hide">
-                C:/Users/yejun/portfolio/main
+                C:/Users/<span className="text-pink-400 font-bold">yejun</span>/portfolio/main
               </div>
             </div>
 
