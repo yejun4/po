@@ -82,14 +82,25 @@ function App() {
           
           {/* 바탕화면 (OS 창 컨테이너) */}
           <div className="w-full max-w-5xl bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden relative z-10">
-            {/* 상단 바 */}
-            <div className="bg-[#F6F6F6] px-5 py-4 flex items-center border-b border-gray-200">
-              <div className="flex gap-2">
-                <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
-                <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
-                <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+            
+            {/* 상단 바 (모바일에서 경로가 아래로 내려가는 버전) */}
+            <div className="bg-[#F6F6F6] px-5 py-3 sm:py-4 flex flex-col sm:flex-row sm:items-center border-b border-gray-200 relative">
+  
+              {/* 상단: 버튼과 모바일용 제목 */}
+              <div className="flex items-center justify-between w-full sm:w-auto">
+                {/* 왼쪽 신호등 버튼 */}
+                <div className="flex gap-2 shrink-0">
+                  <div className="w-3 h-3 rounded-full bg-[#FF5F56]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#FFBD2E]"></div>
+                  <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
+                </div>
+    
+                {/* 모바일에서만 보이는 오른쪽 정렬된 작은 제목 (선택 사항) */}
+                <span className="text-[10px] font-bold text-gray-300 sm:hidden">Main Folder</span>
               </div>
-              <div className="absolute left-1/2 -translate-x-1/2 text-xs text-gray-400 font-mono tracking-wider">
+
+              {/* 중앙/하단 경로 표시: 모바일에서는 버튼 아래에, PC에서는 중앙에 위치 */}
+              <div className="mt-2 sm:mt-0 sm:absolute sm:left-1/2 sm:-translate-x-1/2 text-[9px] sm:text-xs text-gray-400 font-mono tracking-tight sm:tracking-wider overflow-x-auto whitespace-nowrap scrollbar-hide">
                 C:/Users/yejun/portfolio/main
               </div>
             </div>
