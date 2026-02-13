@@ -25,10 +25,10 @@ function App() {
             <span className="text-5xl">🔒</span>
          </div>
           <h1 className="text-3xl font-bold text-gray-800 mb-2">Yejun OS</h1>
-          <p className="text-sm text-gray-400 mb-10">보안 검증이 필요합니다. 오른쪽으로 밀어서 잠금해제</p>
+          <p className="text-sm text-gray-400 mb-10">오른쪽으로 밀어서 잠금해제</p>
 
           {/* 슬라이더 바 컨테이너 */}
-          <div className="relative w-72 h-16 bg-gray-100 rounded-full border border-gray-200 p-1 flex items-center shadow-inner overflow-hidden">
+          <div className="relative w-72 h-20 bg-gray-100 rounded-full border border-gray-200 p-1 flex items-center shadow-inner overflow-hidden">
 
             {/* 실제 드래그를 감지하는 투명 input */}
             <input 
@@ -46,25 +46,29 @@ function App() {
               // 마우스를 떼었을 때 끝까지 안 갔으면 다시 0으로 복귀
               onMouseUp={() => slideValue < 100 && setSlideValue(0)}
               onTouchEnd={() => slideValue < 100 && setSlideValue(0)}
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20"
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20 touch-none"
+              style={{ appearance: 'none', WebkitAppearance: 'none' }}
             />
 
             {/* 2. 움직이는 슬라이더 핸들 */}
             <div 
-              className="w-14 h-14 bg-white rounded-full shadow-md flex items-center justify-center text-pink-300 font-bold transition-transform duration-75 z-10"
+              className="w-16 h-16 bg-white rounded-full shadow-md flex items-center justify-center text-pink-300 font-bold transition-transform duration-75 z-10"
               style={{ 
-                transform: `translateX(${slideValue * 2.2}px)` // 슬라이더 너비에 맞춰 이동 거리 조절
+                transform: `translateX(${slideValue * 2.05}px)` // 슬라이더 너비에 맞춰 이동 거리 조절
               }}
             >
-              →
+              <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M13 5l7 7-7 7M5 5l7 7-7 7" />
+              </svg>
+              
             </div>
 
             {/* 안내 문구 (핸들이 지나가면 서서히 투명해짐) */}
             <span 
               className="absolute w-full text-center text-sm font-bold text-gray-400 select-none pointer-events-none transition-opacity"
-              style={{ opacity: 1 - slideValue / 100 }}
+              style={{ opacity: 1 - slideValue / 70 }}
             >
-              Slide to Unlock
+              밀어서 잠금해제
             </span>
          </div>
         </div>
