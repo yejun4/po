@@ -16,11 +16,10 @@ function App() {
     <div className="min-h-screen bg-[#FDFCFD]">
       <Header />
       
-      <main className="pt-24 pb-10 flex items-center justify-center px-6 relative min-h-[80vh]">
+      <main className="min-h-[calc(100vh-2rem)] flex items-center justify-center px-6 relative pb-20">
         
         {/* 바탕화면 (OS 창 컨테이너) */}
         <div className="w-full max-w-5xl bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden">
-          
           {/* 상단 바 */}
           <div className="bg-[#F6F6F6] px-5 py-4 flex items-center border-b border-gray-200">
             <div className="flex gap-2">
@@ -108,8 +107,8 @@ function App() {
                     <section>
                       <h2 className="text-base font-bold text-gray-800 mb-2 border-l-4 border-pink-400 pl-2">Certifications</h2>
                       <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
-                        <li>TOEIC (2026.02.08 응시 완료)</li>
-                        <li>정보보안 실무 자격증 준비 중</li>
+                        <li>TOEIC 예정 .. </li>
+                        <li>자격증 등 등 예정 ..</li>
                       </ul>
                     </section>
                   </div>
