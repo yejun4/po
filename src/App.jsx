@@ -13,13 +13,13 @@ function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#FDFCFD]">
+    <div className="flex flex-col min-h-screen bg-[#FDFCFD] w-full overflow-x-hidden">
       <Header />
       
-      <main className="min-h-[calc(100vh-2rem)] flex items-center justify-center px-6 relative pb-20">
+      <main className="flex-1 flex items-center justify-center px-6 relative pt-20 pb-10">
         
         {/* 바탕화면 (OS 창 컨테이너) */}
-        <div className="w-full max-w-5xl bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden">
+        <div className="w-full max-w-5xl bg-white rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.05)] border border-gray-100 overflow-hidden relative z-10">
           {/* 상단 바 */}
           <div className="bg-[#F6F6F6] px-5 py-4 flex items-center border-b border-gray-200">
             <div className="flex gap-2">
