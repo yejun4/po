@@ -29,7 +29,7 @@ function App() {
           <p className="text-sm text-gray-400 mb-10">오른쪽으로 밀어서 잠금해제</p>
 
           {/* 슬라이더 바 컨테이너 */}
-          <div className="relative w-72 h-20 bg-gray-100 rounded-full border border-gray-200 p-1 flex items-center shadow-inner overflow-hidden">
+          <div className="relative w-72 h-20 bg-gray-100 rounded-full border border-gray-200 p-2 flex items-center shadow-inner overflow-hidden">
 
             {/* 실제 드래그를 감지하는 투명 input */}
             <input 
@@ -47,7 +47,7 @@ function App() {
               // 마우스를 떼었을 때 끝까지 안 갔으면 다시 0으로 복귀
               onMouseUp={() => slideValue < 100 && setSlideValue(0)}
               onTouchEnd={() => slideValue < 100 && setSlideValue(0)}
-              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-30 touch-none"
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-30 touch-none scale-y-[2] origin-center"
               style={{ appearance: 'none', WebkitAppearance: 'none' }}
             />
 
