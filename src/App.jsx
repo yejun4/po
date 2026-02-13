@@ -159,7 +159,7 @@ function App() {
                       <section>
                         <h2 className="text-base font-bold text-gray-800 mb-2 border-l-4 border-blue-400 pl-2">Education</h2>
                         <p className="font-semibold text-gray-800 text-base">상명대학교 (Sangmyung University)</p>
-                        <p className="text-sm text-gray-600">AI·클라우드 전공</p>
+                        <p className="text-sm text-gray-600">빅데이터융합 전공</p>
                         <p className="text-xs text-gray-400">Student ID: 202310806</p>
                       </section>
                       <section>
@@ -167,6 +167,13 @@ function App() {
                         <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
                           <li>정보보안 실무 역량 강화 중</li>
                           <li>포트폴리오 고도화 작업 진행 중</li>
+                        </ul>
+                      </section>
+                      <section>
+                        <h2 className="text-base font-bold text-gray-800 mb-2 border-l-4 border-purple-400 pl-2">Certifications</h2>
+                        <ul className="text-sm text-gray-600 list-disc list-inside space-y-1">
+                          <li>TOEIC 예정 .. </li>
+                          <li>자격증 등 등 예정 ..</li>
                         </ul>
                       </section>
                     </div>
@@ -214,6 +221,7 @@ function App() {
                         </svg>
                       </div>
                       <h2 className="text-xl font-bold text-gray-800 mb-2">Let's Connect!</h2>
+                      <p className="text-sm text-gray-500 mb-6">보안과 개발에 대한 이야기는 언제나 환영입니다.</p>
                       <div className="space-y-3 inline-block text-left bg-gray-50 p-6 rounded-2xl border border-gray-100 mt-4">
                         <p className="text-sm text-gray-600 font-mono">📞 Phone: 010-0000-0000</p>
                         <p className="text-sm text-gray-600 font-mono">📧 Email: yejuni04@naver.com</p>
