@@ -127,12 +127,12 @@ function App() {
                   <span className="text-sm font-semibold text-gray-600 px-3 py-1 rounded-md group-hover:bg-pink-100/50">My_Projects</span>
                 </div>
 
-                {/* 3. Security_Lab */}
+                {/* 3. Sec_Archive */}
                 <div className="flex flex-col items-center group cursor-pointer" onClick={() => setActiveWindow('security')}>
                   <div className="w-20 h-20 mb-3 flex items-center justify-center transition-transform group-hover:scale-110">
                     <img src={folderIcon} alt="Folder" className="w-full h-full object-contain" />
                   </div>
-                  <span className="text-sm font-semibold text-gray-600 px-3 py-1 rounded-md group-hover:bg-purple-100/50">Security_Lab</span>
+                  <span className="text-sm font-semibold text-gray-600 px-3 py-1 rounded-md group-hover:bg-purple-100/50">Sec_Archive</span>
                 </div>
 
                 {/* 4. Contact.txt */}
@@ -219,7 +219,7 @@ function App() {
                         <h2 className="text-base font-bold text-gray-800 mb-2 border-l-4 border-purple-400 pl-2">Contest</h2>
                         <div className="bg-gray-50 p-3 rounded-lg border border-gray-100">
                           <p className="text-sm font-bold text-gray-700">DB손해보험 금융공모전 참여</p>
-                          <p className="text-xs text-gray-500">금융 IT와 보안 기술을 결합한 서비스 기획</p>
+                          <p className="text-xs text-gray-500">금융 흠..</p>
                         </div>
                       </section>
                       <section>
