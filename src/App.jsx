@@ -212,7 +212,7 @@ function App() {
                     </div>
                   )}
 
-                  {/* 3. Security_Lab 내용 */}
+                  {/* 3. Sec_Archive 내용 */}
                   {activeWindow === 'security' && (
                     <div className="space-y-4">
                       <section>
